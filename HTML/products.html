@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Exclusive
+      Offers!</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../images/title_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  
+
+
+
+    <!-- making the navigation with logo and search bar -->
+    <nav class="heading_navigation flex" id="navigation_heading">
+        <!-- making the nav container for max width -->
+        <div class="nav_container flex">
+            <div class="logo flex">
+                <a href="../html/index.html" class="flip_logo"><img src="../images/flipcartplus.png" alt="logo"></a>
+                <a href="../html/index.html" class="anchor plus">Explore<span class="plus_lan">Plus <img src="../images/plus.png" alt="logo"></span></a>
+            </div>
+
+            <!-- making the searchbar -->
+            <div class="search_bar_container">
+                <div class="search_bar">
+                    <form class="search flex">
+                        <input type="text" placeholder="Search For products, brands and more" class="search_box">
+                        <button class="btn_search"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- making the login nutton -->
+            <div class="login">
+                <a href="#Modal" class="login_btn">Login</a>
+                <div class="login_dropdown none">
+                    <ul class="login_dropdown_list">
+                        <li class="login_drop_li sign_li flex">
+                            <p class="new_login">New customer</p>
+                            <a href="#" class="sign_up">Sign Up</a>
+                        </li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-user"></i>My Profile</li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-plus"></i>Flipkart Plus Zne</li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-archive"></i>Orders</li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-heart"></i>Whislist</li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-archive"></i>Rewards</li>
+                        <li class="login_drop_li"><i class="more_icon fa fa-gift"></i>Gift Cards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seller">
+              <span class="seller_lan">Become a Seller</span>
+          </div>
+
+            <!-- making the more button -->
+            <div class="more">
+                <span class="more_lan">More <i class="fa fa-angle-down"></i></span>
+                <div class="more_dropdown none">
+                    <div class="pointer more_pointer"></div>
+                    <ul class="more_dropdown_list">
+                        <li class="more_drop_li"><i class="more_icon fa fa-bell"></i>Notification Preferences</li>
+                        <li class="more_drop_li"><i class="more_icon fa fa-shopping-basket"></i>Sell on Flipkart</li>
+                        <li class="more_drop_li"><i class="more_icon fa fa-question"></i>24X7 Customer Care</li>
+                        <li class="more_drop_li"><i class="more_icon fa fa-line-chart"></i>Advertise</li>
+                        <li class="more_drop_li"><i class="more_icon fa fa-download"></i>Download App</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- making the cart button -->
+            <div class="cart">
+                <span class="cart_lan"><i class="fa fa-shopping-cart"></i> Cart</span>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">        
+            
+            <button type="button" class="close" data-dismiss="modal">✕</button>
+       
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5 bg-primary modalpad">
+                  <h2>Login</h2>
+                  <p>Get access to your Orders, Wishlist and Recommendations</p>
+                <img src="../images/login_banner.png" style="padding-top: 160px;" alt="">
+              </div>
+
+              <div class="col-md-7 bg-white modalpad">
+                <form action="" class="loginform">
+                  <div class="form-group"  style="margin-bottom: 40px;">
+                   <span class="text-secondary">Enter Email/Mobile Number</span>
+                    <input type="text" autocomplete="off" name="email" placeholder="" class="form-control">
+                  </div>
+                  <div class="form-group" >
+                   <span class="text-secondary">Enter Password</span>
+                    <input type="password" autocomplete="off" name="password" placeholder="" class="form-control">
+                    <a href="#" class="btn btn-link  forget">Forget?</a>
+                  </div>
+                  <p class="text-secondary"><small>By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href=""> Privacy Policy.</small></a></p>
+                  <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-lg text-white btn-block" value="Login" >
+                  </div>
+                </form>
+
+                <h4 class="text-secondary text-center">OR</h4>
+                
+                <a href="#" class="btn btn-lg text-primary btn-block sup">Request OTP</a>
+               
+                <div class="text-center slink">
+                  <a href="#Modal12" class="btn-link btn-primary">New to Flipkart? Create an account</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+          
+    
+         
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">        
+            
+            <button type="button" class="close" data-dismiss="modal">✕</button>
+       
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5 bg-primary modalpad">
+                  <h2>Looks like you're new here</h2>
+                  <p>Sign up with your mobile number to get started</p>
+                <img src="../images/login_banner.png" style="padding-top: 160px;" alt="">
+              </div>
+
+              <div class="col-md-7 bg-white modalpad">
+                <form action="" class="loginform">
+                  <div class="form-group"  style="margin-bottom: 40px;">
+                   <span class="text-secondary">Enter Mobile Number</span>
+                    <input type="text" autocomplete="off" name="email" placeholder="" class="form-control">
+                  </div>
+                  
+                  <p class="text-secondary"><small>By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a href=""> Privacy Policy.</small></a></p>
+                  <div class="form-group">
+                    <input type="submit" name="submit" class="btn btn-lg text-white btn-block" value="Continue" >
+                  </div>
+                </form>
+
+               
+                
+                <a href="#login" class="btn btn-lg text-primary btn-block sup">Existing User? Login</a>
+               
+                
+              </div>
+            </div>
+          </div>
+
+
+          
+    
+         
+    
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-- making the heading categories -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/top.png" alt="loading image" class="cat_image">
+                <p class="">Top Offers</p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/grocery.png" alt="loading image" class="cat_image">
+                <p class="">Grocery</p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/phone.png" alt="loading image" class="cat_image">
+                <p class="">Mobiles</p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/fashion.png" alt="loading image" class="cat_image">
+                <p class="">Fashion <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/electronics.png" alt="loading image" class="cat_image">
+                <p class="">Electronics <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/home.png" alt="loading image" class="cat_image">
+          <p class="">Home <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/appliances.png" alt="loading image" class="cat_image">
+                <p class="">Appliances <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/travel.png" alt="loadinng image" class="cat_image">
+          <p class="">Travel</p>
+        </div>
+        <div class="col-xs-4 col-sm ">
+          <img src="../images/toy.png" alt="loading image" class="cat_image">
+          <p class="">Beauty, Toys & More <i class="fa fa-angle-down"></i></p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="overlay w-100 h-100 position-fixed text-center">
+      <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-primary"></i>
+    </div>
+ 
+    <!-- making the corousel and items container -->
+    <div class="container-fluid whole_con">
+     <div class="row">
+       <div class="col-md-3 f_con">
+         <div class="shadow">
+         <div class="bg-white f_aside">
+           <h4 class="px-2 pb-2" style="font-size: 18px; font-weight: 500;color: rgb(33, 33, 33);">Filters</h4>
+         </div>
+         <div class="f_aside">
+           <span class="px-2 pt-3 "  style="font-size: 12px;text-transform: uppercase; font-weight: 548;color: rgb(33, 33, 33);">Categories</span>
+           
+            <button class="btn btn-link btn-block text-left font-weight-bold text-decoration-none text-dark have_chevron" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+             <i class="fa fa-chevron-down"></i> Mobile & Accessories
+            </button>
+          
+          <div class="collapse pt-1" id="collapseExample">
+            <ul class="nav flex-column">
+              <li>
+                <a href="#">&nbsp;  Mobiles</a>
+              </li>
+              <li>
+                <a href="#">&nbsp;Tablets</a>
+              </li>
+              <li>
+                <a href="#">&nbsp;Mobile Accessories</a>
+              </li>
+              <li>
+                <a href="#">&nbsp;Tablet Accessories</a>
+              </li>
+            </ul>
+          </div>
+         </div>
+         <div class="f_slider">
+           <span style="margin-left: -6px;"><strong>Price</strong></span>
+          <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="3000" data-slider-step="10" data-slider-value="[0,3000]"/>
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <select class="border" name="min_range">
+              <option>Min</option>
+              <option value="3000">Rs 3000</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            To
+          </div>
+          <div class="col-md-5 p-0">
+            <select class="border" name="range">
+              <option>Max</option>
+              <option value="3000">Rs 3000 +</option>
+              <option value="5000">Rs 5000 +</option>
+              <option value="10000">Rs 10000 +</option>
+            </select>
+          </div>
+
+        </div>
+        </div>
+
+         <div class="f_aside1">
+          
+          
+           <button class="btn btn-link btn-block text-left font-weight-bold text-decoration-none text-dark have_chevron" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+            Brand<i class="fa fa-chevron-down float-right"></i> 
+           </button>
+
+          
+         
+         <div class="collapse show pt-1" id="collapseExample1">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+           <ul id="myUL" class="nav flex-column">
+             <li>
+               <a href="#">&nbsp;<input type="checkbox">  Samsung</a>
+             </li>
+             <li>
+               <a href="#">&nbsp;<input type="checkbox"> Nokia</a>
+             </li>
+             <li>
+               <a href="#">&nbsp;<input type="checkbox"> Mi</a>
+             </li>
+             <li>
+               <a href="#">&nbsp;<input type="checkbox"> Tablet</a>
+             </li>
+           </ul>
+           <button class="btn btn-link">256 more</button>
+         </div>
+        </div>
+
+        </div>
+      </div>
+       <div class="col-md-9 s_con">
+        <section class="s_section">
+          <div class="s1">
+            <div class="s1-top">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb arr-right bg-white " style="margin-bottom: 0px;">
+                  <li class="breadcrumb-item"><a href="#" class="text-secondary">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="text-secondary">Mobile</a></li>          
+                </ol>
+              </nav>
+              
+              <div style="padding-left: 15px;"><strong>Kitchen, Cookware & Serveware</strong>&nbsp; &nbsp;&nbsp;<span class="text-secondary" style="font-size: 12px;">(Showing 1 – 40 products of 81,803 products) </span> </div>
+              <div class="clearfix pt-1" style="padding-left: 15px;margin-top: 9px;">
+              <strong class="float-left" style="margin-right:25px;">Sort By</strong>
+              <ul class="nav nav-pills float-left search_by">
+                <li class="nav-item"><a class="nav-link active" href="#">Relevance</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Popularity</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Price--Low to High </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Relevance</a></li>
+              </ul>
+                
+              </div>
+          </div>
+
+            <div class="s1-center">
+                <div class="row" style="margin-right: 0px;margin-left: 0px;"> 
+                  <div class="col-md-3">
+                      <a href="#" class="product">
+                        <div class="prod-indicators">
+                            <span class="fa fa-circle active"></span>
+                            <span class="fa fa-circle"></span>
+                            <span class="fa fa-circle"></span>
+                            <span class="fa fa-circle"></span>
+                        </div>
+                        <div class="top">
+                            <i class="fa fa-heart"></i>
+                            <img src="../images/products/product-9.jpg" class="img-fluid prod-img" alt="">
+                        </div>
+                        <div class="bottom bg-white">
+                          <div class="prod-desc-top">
+                            <div class="prod-title px-2 text-body" style="font-size: 15px;">Baby Dress</div>
+                            <div class="prod-color px-2 text-secondary pt-2">Blue,Red,Purple </div>
+                            <div class="rate pt-2">
+                              <button class="btn btn-success btn-sm" style="padding: 0px 9px;">4.3 <i class="fa fa-star"></i></button>
+                              <span class="text-secondary">(2,20,728)</span>
+                              <!-- <img src="../images/fd.png" alt=""> -->
+                            </div>
+                            <div class="price pt-4">
+                              <span class="text-body"><strong>Rs 1,700</strong></span>
+                              <span class="text-secondary">&nbsp;<del>Rs 1,800</del></span>
+                              <span class="text-success">&nbsp;&nbsp;55% off</span>
+                            </div>
+                          </div>
+                            
+                          
+                          <div class="prod-desc-bottom">
+                            <strong class="text-body">Sizes : </strong>
+                            <strong class="text-secondary">6,7,8</strong>
+                          </div>
+                        </div>
+                      </a>
+
+                      
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" class="product">
+                      <div class="prod-indicators">
+                          <span class="fa fa-circle active"></span>
+                          <span class="fa fa-circle"></span>
+                          <span class="fa fa-circle"></span>
+                          <span class="fa fa-circle"></span>
+                      </div>
+                      <div class="top">
+                          <i class="fa fa-heart"></i>
+                          <img src="../images/products/product-9.jpg" class="img-fluid prod-img" alt="">
+                      </div>
+                      <div class="bottom bg-white">
+                        <div class="prod-desc-top">
+                          <div class="prod-title px-2 text-body" style="font-size: 15px;">Baby Dress</div>
+                          <div class="prod-color px-2 text-secondary pt-2">Blue,Red,Purple </div>
+                          <div class="rate pt-2">
+                            <button class="btn btn-success btn-sm" style="padding: 0px 9px;">4.3 <i class="fa fa-star"></i></button>
+                            <span class="text-secondary">(2,20,728)</span>
+                            <!-- <img src="../images/fd.png" alt=""> -->
+                          </div>
+                          <div class="price pt-4">
+                            <span class="text-body"><strong>Rs 1,700</strong></span>
+                            <span class="text-secondary">&nbsp;<del>Rs 1,800</del></span>
+                            <span class="text-success">&nbsp;&nbsp;55% off</span>
+                          </div>
+                        </div>
+                          
+                        
+                        <div class="prod-desc-bottom">
+                          <strong class="text-body">Sizes : </strong>
+                          <strong class="text-secondary">6,7,8</strong>
+                        </div>
+                      </div>
+                    </a>
+
+                    
+                </div>
+
+                <div class="col-md-3">
+                  <a href="#" class="product">
+                    <div class="prod-indicators">
+                        <span class="fa fa-circle active"></span>
+                        <span class="fa fa-circle"></span>
+                        <span class="fa fa-circle"></span>
+                        <span class="fa fa-circle"></span>
+                    </div>
+                    <div class="top">
+                        <i class="fa fa-heart"></i>
+                        <img src="../images/products/product-9.jpg" class="img-fluid prod-img"  alt="">
+                    </div>
+                    <div class="bottom bg-white">
+                      <div class="prod-desc-top">
+                        <div class="prod-title px-2 text-body" style="font-size: 15px;">Baby Dress</div>
+                        <div class="prod-color px-2 text-secondary pt-2">Blue,Red,Purple </div>
+                        <div class="rate pt-2">
+                          <button class="btn btn-success btn-sm" style="padding: 0px 9px;">4.3 <i class="fa fa-star"></i></button>
+                          <span class="text-secondary">(2,20,728)</span>
+                          <!-- <img src="../images/fd.png" alt=""> -->
+                        </div>
+                        <div class="price pt-4">
+                          <span class="text-body"><strong>Rs 1,700</strong></span>
+                          <span class="text-secondary">&nbsp;<del>Rs 1,800</del></span>
+                          <span class="text-success">&nbsp;&nbsp;55% off</span>
+                        </div>
+                      </div>
+                        
+                      
+                      <div class="prod-desc-bottom">
+                        <strong class="text-body">Sizes : </strong>
+                        <strong class="text-secondary">6,7,8</strong>
+                      </div>
+                    </div>
+                  </a>
+
+                  
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="product">
+                  <div class="prod-indicators">
+                      <span class="fa fa-circle active"></span>
+                      <span class="fa fa-circle"></span>
+                      <span class="fa fa-circle"></span>
+                      <span class="fa fa-circle"></span>
+                  </div>
+                  <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img src="../images/products/product-9.jpg" class="img-fluid prod-img" alt="">
+                  </div>
+                  <div class="bottom bg-white">
+                    <div class="prod-desc-top">
+                      <div class="prod-title px-2 text-body" style="font-size: 15px;">Baby Dress</div>
+                      <div class="prod-color px-2 text-secondary pt-2">Blue,Red,Purple </div>
+                      <div class="rate pt-2">
+                        <button class="btn btn-success btn-sm" style="padding: 0px 9px;">4.3 <i class="fa fa-star"></i></button>
+                        <span class="text-secondary">(2,20,728)</span>
+                        <!-- <img src="../images/fd.png" alt=""> -->
+                      </div>
+                      <div class="price pt-4">
+                        <span class="text-body"><strong>Rs 1,700</strong></span>
+                        <span class="text-secondary">&nbsp;<del>Rs 1,800</del></span>
+                        <span class="text-success">&nbsp;&nbsp;55% off</span>
+                      </div>
+                    </div>
+                      
+                    
+                    <div class="prod-desc-bottom">
+                      <strong class="text-body">Sizes : </strong>
+                      <strong class="text-secondary">6,7,8</strong>
+                    </div>
+                  </div>
+                </a>
+
+                
+            </div>
+            <div class="col-md-3">
+              <a href="#" class="product">
+                <div class="prod-indicators">
+                    <span class="fa fa-circle active"></span>
+                    <span class="fa fa-circle"></span>
+                    <span class="fa fa-circle"></span>
+                    <span class="fa fa-circle"></span>
+                </div>
+                <div class="top">
+                    <i class="fa fa-heart"></i>
+                    <img src="../images/products/product-9.jpg" class="img-fluid prod-img" alt="">
+                </div>
+                <div class="bottom bg-white">
+                  <div class="prod-desc-top">
+                    <div class="prod-title px-2 text-body" style="font-size: 15px;">Baby Dress</div>
+                    <div class="prod-color px-2 text-secondary pt-2">Blue,Red,Purple </div>
+                    <div class="rate pt-2">
+                      <div class="row">
+                        <div class="col-md-8" style="padding-right:0px;">
+                          <button class="btn btn-success btn-sm" style="padding: 0px 9px;">4.3 <i class="fa fa-star"></i></button>
+                      <span class="text-secondary">(2,20,728)</span>
+                      
+                        </div>
+                        <div class="col-md-4" style="padding-left: 0px; margin-left:-17px;">
+                          <img class="img-fluid" src="../images/fd.png" alt="">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="price pt-4">
+                      <span class="text-body"><strong>Rs 1,700</strong></span>
+                      <span class="text-secondary">&nbsp;<del>Rs 1,800</del></span>
+                      <span class="text-success">&nbsp;&nbsp;55% off</span>
+                    </div>
+                  </div>
+                    
+                  
+                  <div class="prod-desc-bottom">
+                    <strong class="text-body">Sizes : </strong>
+                    <strong class="text-secondary">6,7,8</strong>
+                  </div>
+                </div>
+              </a>
+
+              
+          </div>
+
+                </div>
+            </div>
+
+            <div class="s1-bottom">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="px-4" style="margin-top: 25px;"><strong> Page 1 of 6 </strong></div>
+                </div>
+                <div class="col-md-9">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li> -->
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link text-dark" href="#">6</a></li>
+                      <li class="page-item"><a class="page-link btn btn-primary" href="#"><strong> Next</strong></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+          <div class="s2">
+            <div class="pt-4 ml-3"> <strong> Did you find what you were looking for?</strong> <button type="button" class="btn btn-outline-secondary ml-2"><strong>Yes</strong></button>
+              <button type="button" class="btn btn-outline-secondary ml-3"><strong> No</strong></button> </div>
+
+          </div>
+          
+
+        </section>
+       </div>
+     </div>
+    </div>
+    
+      <div class="m6">
+        <div class="footer_top">
+          <div class="row pt-4">
+            <div class="col-md-7">
+              <div class="row"> 
+                <div class="col ml-5">
+                  <h5 class="text-secondary">ABOUT</h5>
+                  <ul class="nav flex-column">
+    
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Flipkart Stories</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Press</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+                <div class="col">
+                  <h5 class="text-secondary">ABOUT</h5>
+                  <ul class="nav flex-column">
+    
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Flipkart Stories</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Press</a>
+                    </li>
+                   
+                  </ul>
+                  
+                </div>
+                <div class="col">
+                  <h5 class="text-secondary">ABOUT</h5>
+                  <ul class="nav flex-column">
+    
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Flipkart Stories</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Press</a>
+                    </li>
+                   
+                  </ul>
+                  
+                </div>
+                <div class="col">
+                  <h5 class="text-secondary">ABOUT</h5>
+                  <ul class="nav flex-column">
+    
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Flipkart Stories</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                      <a class="nav-link" href="#">Press</a>
+                    </li>
+                   
+                  </ul>
+                  
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col">
+                  <h5 class="text-secondary">Mail Us:</h5>
+                  <ul class="nav flex-column">
+    
+                  
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                    <a class="nav-link" href="#">Flipkart Internet Private Limited,
+                      <br>
+                    Buildings Alyssa, Begonia &
+                    <br>
+                    Clove Embassy Tech Village,
+                    <br>
+                    Outer Ring Road, Devarabeesanahalli Village,
+                    <br>
+                    Bengaluru, 560103,
+                    <br>
+                    Karnataka, India
+                    </a>
+                  </li>
+                   
+                  </ul>
+                  
+
+                  
+                </div>
+                <div class="col">
+                  <h5 class="text-secondary">Registered Office Address::</h5>
+                  <ul class="nav flex-column">
+    
+                  
+                    <li class="nav-item" style="margin: 0px 0px -13px 0px;">
+                    <a class="nav-link" href="#">Flipkart Internet Private Limited,
+                      <br>
+                      Buildings Alyssa, Begonia &
+                      <br>
+                      Clove Embassy Tech Village,
+                      <br>
+                      Outer Ring Road, Devarabeesanahalli Village,
+                      <br>
+                      Bengaluru, 560103,
+                      <br>
+                      Karnataka, India
+                      <br>
+                      CIN : U51109KA2012PTC066107
+                      <br>
+                      Telephone: <b style="color:blue; font-weight: 700;">1800 202 9898</b>
+                      
+                    </a>
+                  </li>
+                   
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="row">
+            <div class="col-md-7 mt-4 ml-5">
+              <ul class="nav">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="../images/icons/star.svg" ><span>Become a Seller</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="../images/icons/ad.svg"><span>Advertise</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="../images/icons/gift.svg"><span>Gift Cards</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="../images/icons/help.svg"><span>Help Center</span></a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-md-4 mt-5">
+              <a class="nav-link" href="#"><img src="../images/icons/pay.svg" style="margin-top: -13px;" ></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     
+
+    
+
+
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+  <script>
+    
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    <script>
+    $("#ex2").slider({});
+    
+
+    $(document).on('click','.have_chevron',function(){
+      $(this).find('.fa').toggleClass('fa-chevron-up fa-chevron-down')
+    });
+
+    $(document).on('click','.search_by a',function(e){
+      $('.overlay').show();
+      setTimeout(function(){
+        $('.overlay').hide(); 
+      }, 2000);
+      e.preventDefault();
+      $(this).parent().parent().find('a.active').removeClass('active');
+      $(this).addClass('active');
+    });
+    </script>
+</body>
+</html>

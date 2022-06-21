@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+      Lifestyle, Books &amp; More. Exclusive Offers!
+    </title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="icon" href="../images/title_icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/jquery.simpleLens.css" />
+    <link rel="stylesheet" href="../CSS/jquery.simpleGallery.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- making the navigation with logo and search bar -->
+    <nav class="heading_navigation flex w-100" id="navigation_heading">
+      <!-- making the nav container for max width -->
+      <div class="nav_container flex">
+        <div class="logo flex">
+          <a href="../html/index.html" class="flip_logo"
+            ><img src="../images/flipcartplus.png" alt="logo"
+          /></a>
+          <a href="../html/index.html" class="anchor plus"
+            >Explore<span class="plus_lan"
+              >Plus <img src="../images/plus.png" alt="logo" /></span
+          ></a>
+        </div>
+
+        <!-- making the searchbar -->
+        <div class="search_bar_container">
+          <div class="search_bar">
+            <form class="search flex">
+              <input
+                type="text"
+                placeholder="Search For products, brands and more"
+                class="search_box"
+              />
+              <button class="btn_search"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <!-- making the login nutton -->
+        <div class="login">
+          <a href="#Modal" class="login_btn">Login</a>
+          <div class="login_dropdown none">
+            <ul class="login_dropdown_list">
+              <li class="login_drop_li sign_li flex">
+                <p class="new_login">New customer</p>
+                <a href="#" class="sign_up">Sign Up</a>
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-user"></i>My Profile
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-plus"></i>Flipkart Plus Zne
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-archive"></i>Orders
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-heart"></i>Whislist
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-archive"></i>Rewards
+              </li>
+              <li class="login_drop_li">
+                <i class="more_icon fa fa-gift"></i>Gift Cards
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="seller">
+          <span class="seller_lan">Become a Seller</span>
+        </div>
+
+        <!-- making the more button -->
+        <div class="more">
+          <span class="more_lan">More <i class="fa fa-angle-down"></i></span>
+          <div class="more_dropdown none">
+            <div class="pointer more_pointer"></div>
+            <ul class="more_dropdown_list">
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-bell"></i>Notification Preferences
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-shopping-basket"></i>Sell on Flipkart
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-question"></i>24X7 Customer Care
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-line-chart"></i>Advertise
+              </li>
+              <li class="more_drop_li">
+                <i class="more_icon fa fa-download"></i>Download App
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- making the cart button -->
+        <div class="cart">
+          <span class="cart_lan"><i class="fa fa-shopping-cart"></i> Cart</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">✕</button>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5 bg-primary modalpad">
+                <h2>Login</h2>
+                <p>Get access to your Orders, Wishlist and Recommendations</p>
+                <img
+                  src="../images/login_banner.png"
+                  style="padding-top: 160px"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-md-7 bg-white modalpad">
+                <form action="" class="loginform">
+                  <div class="form-group" style="margin-bottom: 40px">
+                    <span class="text-secondary"
+                      >Enter Email/Mobile Number</span
+                    >
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      name="email"
+                      placeholder=""
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <span class="text-secondary">Enter Password</span>
+                    <input
+                      type="password"
+                      autocomplete="off"
+                      name="password"
+                      placeholder=""
+                      class="form-control"
+                    />
+                    <a href="#" class="btn btn-link forget">Forget?</a>
+                  </div>
+                  <p class="text-secondary">
+                    <small>
+                      By continuing, you agree to Flipkart's
+                      <a href="#">Terms of Use</a> and
+                      <a href="#"> Privacy Policy</a>
+                    </small>
+                  </p>
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      name="submit"
+                      class="btn btn-lg text-white btn-block"
+                      value="Login"
+                    />
+                  </div>
+                </form>
+
+                <h4 class="text-secondary text-center">OR</h4>
+
+                <a href="#" class="btn btn-lg text-primary btn-block sup"
+                  >Request OTP</a
+                >
+
+                <div class="text-center slink">
+                  <a href="#Modal12" class="btn-link btn-primary"
+                    >New to Flipkart? Create an account</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">✕</button>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5 bg-primary modalpad">
+                <h2>Looks like you're new here</h2>
+                <p>Sign up with your mobile number to get started</p>
+                <img
+                  src="../images/login_banner.png"
+                  style="padding-top: 160px"
+                  alt=""
+                />
+              </div>
+
+              <div class="col-md-7 bg-white modalpad">
+                <form action="" class="loginform">
+                  <div class="form-group" style="margin-bottom: 40px">
+                    <span class="text-secondary">Enter Mobile Number</span>
+                    <input
+                      type="text"
+                      autocomplete="off"
+                      name="email"
+                      placeholder=""
+                      class="form-control"
+                    />
+                  </div>
+
+                  <p class="text-secondary">
+                    <small>
+                      By continuing, you agree to Flipkart's
+                      <a href="#">Terms of Use</a> and
+                      <a href=""> Privacy Policy. </a>
+                    </small>
+                  </p>
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      name="submit"
+                      class="btn btn-lg text-white btn-block"
+                      value="Continue"
+                    />
+                  </div>
+                </form>
+
+                <a href="#login" class="btn btn-lg text-primary btn-block sup"
+                  >Existing User? Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- making the heading categories -->
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-xs-4 col-sm">
+          <img src="../images/top.png" alt="loading image" class="cat_image" />
+          <p class="">Top Offers</p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/grocery.png"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="">Grocery</p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/phone.png"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="">Mobiles</p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/fashion.png"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="">Fashion <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/electronics.png"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="">Electronics <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img src="../images/home.png" alt="loading image" class="cat_image" />
+          <p class="">Home <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/appliances.png"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="">Appliances <i class="fa fa-angle-down"></i></p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img
+            src="../images/travel.png"
+            alt="loadinng image"
+            class="cat_image"
+          />
+          <p class="">Travel</p>
+        </div>
+        <div class="col-xs-4 col-sm">
+          <img src="../images/toy.png" alt="loading image" class="cat_image" />
+          <p class="">Beauty, Toys & More <i class="fa fa-angle-down"></i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid whole_con w-100 border-top">
+      <div class="row m-0">
+        <div class="col-md-5 p-0">
+          <article class="detail d-none">
+            <div class="simpleLens-gallery-container" id="demo-1">
+              <div class="row m-0">
+                <div class="col-md-2 p-0">
+                  <div class="simpleLens-thumbnails-container mt-2">
+                    <a
+                      href="#"
+                      class="text-center bg-white border chev_up shadow"
+                    >
+                      <i class="fa fa-chevron-up text-dark"></i>
+                    </a>
+
+                    <div class="overflowcover">
+                      <div>
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/benvado_elisa_bianco.jpg"
+                          data-big-image="../images/demo/medium/benvado_elisa_bianco.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/benvado_elisa_bianco.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/camper_21926_red.jpg"
+                          data-big-image="../images/demo/medium/camper_21926_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/camper_21926_red.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/flylondon_most_red.jpg"
+                          data-big-image="../images/demo/medium/flylondon_most_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/flylondon_most_red.jpg"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/benvado_elisa_bianco.jpg"
+                          data-big-image="../images/demo/medium/benvado_elisa_bianco.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/benvado_elisa_bianco.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/camper_21926_red.jpg"
+                          data-big-image="../images/demo/medium/camper_21926_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/camper_21926_red.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/flylondon_most_red.jpg"
+                          data-big-image="../images/demo/medium/flylondon_most_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/flylondon_most_red.jpg"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/flylondon_most_red.jpg"
+                          data-big-image="../images/demo/medium/flylondon_most_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/flylondon_most_red.jpg"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/benvado_elisa_bianco.jpg"
+                          data-big-image="../images/demo/medium/benvado_elisa_bianco.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/benvado_elisa_bianco.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/camper_21926_red.jpg"
+                          data-big-image="../images/demo/medium/camper_21926_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/camper_21926_red.jpg"
+                          />
+                        </a>
+
+                        <a
+                          href="#"
+                          class="simpleLens-thumbnail-wrapper"
+                          data-lens-image="../images/demo/large/flylondon_most_red.jpg"
+                          data-big-image="../images/demo/medium/flylondon_most_red.jpg"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="../images/demo/thumbnail/flylondon_most_red.jpg"
+                          />
+                        </a>
+                      </div>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-center bg-white border chev_down shadow"
+                    >
+                      <i class="fa fa-chevron-down text-dark"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="my-2 w-100 pd_heart_div position-absolute">
+                    <span
+                      class="bg-white mr-2 rounded-circle float-right shadow pd_heart text-center text-secondary"
+                      ><i class="fa fa-heart"></i
+                    ></span>
+                  </div>
+
+                  <div class="simpleLens-container">
+                    <div class="simpleLens-big-image-container">
+                      <a
+                        class="simpleLens-lens-image"
+                        data-lens-image="../images/demo/large/benvado_elisa_bianco.jpg"
+                      >
+                        <img
+                          src="../images/demo/medium/benvado_elisa_bianco.jpg"
+                          class="simpleLens-big-image"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row ml-3">
+              <div class="col-md-6 p-1">
+                <a
+                  href="#"
+                  class="btn btn-warning btn-lg btn-block rounded-0"
+                  style="background-color: #ff9f00"
+                  ><i class="fa fa-shopping-cart"></i> Add to cart</a
+                >
+              </div>
+              <div class="col-md-6 p-1">
+                <a
+                  href="#"
+                  class="btn btn-warning btn-lg btn-block rounded-0"
+                  style="background-color: #fb641b"
+                  ><i class="fa fa-bolt"></i> Buy Now</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-7 p-0">
+          <div class="pd_top">
+            <div class="row">
+              <div class="col-md-6">
+                <nav aria-label="breadcrumb">
+                  <ol
+                    class="breadcrumb arr-right bg-white"
+                    style="margin-bottom: 0px"
+                  >
+                    <li class="breadcrumb-item">
+                      <a href="#" class="text-secondary">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#" class="text-secondary">Mobile</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="col-md-6 shareopt" style="padding-top: 9px">
+                <a href="#" class="float-right"
+                  ><i class="fa fa-share"></i> Share</a
+                >
+              </div>
+            </div>
+            <div class="px-5 contents">
+              <h5 class="p-content-title"><strong>BRUTON</strong></h5>
+              <h5 class="p-content-title1">
+                Canvas shoes for Men Sneakers For Men (Orange, Grey)
+              </h5>
+
+              <div class="row m-0">
+                <div class="col-md-12 p-0">
+                  <span
+                    ><button class="btn btn-xs bg-success text-white">
+                      3.9 <i class="fa fa-star"></i></button
+                  ></span>
+                  <span class="text-secondary px-2"
+                    >5,595 Ratings & 838 Reviews</span
+                  >
+                  <span class="px-2"
+                    ><img src="../images/fd.png" height="21"
+                  /></span>
+                </div>
+              </div>
+              <div
+                style="
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #388e3c;
+                  margin: 12px 0 -12px;
+                "
+              >
+                <span><strong>Special price</strong></span>
+              </div>
+              <div style="padding-top: 12px">
+                <span style="font-size: 28px"><strong> ₹139</strong></span>
+                <span style="font-size: 16px; margin-left: 12px; color: #878787"
+                  ><del> ₹600</del></span
+                >
+                <span
+                  style="
+                    font-size: 16px;
+                    margin-left: 12px;
+                    font-weight: 501;
+                    color: #388e3c;
+                  "
+                  >84% off</span
+                >
+                <span class="moreinfo" style="margin-left: 12px">
+                  <span class="position-relative moreinfospan"
+                    ><img src="../images/more_info.svg" />
+                    <div
+                      class="morebox bg-white shadow-lg rounded position-absolute mt-3"
+                      style="left: -16px"
+                    >
+                      <div class="pointer more_pointer"></div>
+
+                      <span class="txt-dark ml-4"
+                        ><strong>Price details</strong></span
+                      >
+                      <div class="moreinfo_price">
+                        <div class="row mt-3">
+                          <div class="col-md-8">
+                            <div class="text-secondary">
+                              Maximum Retail Price
+                            </div>
+                            <div class="text-secondary">
+                              (incl. of all taxes)
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <span class="float-right text-secondary"
+                              ><del><strong>₹ 2549.00</strong></del></span
+                            >
+                          </div>
+                        </div>
+
+                        <div class="row mt-3">
+                          <div class="col-md-8">
+                            <div class="text-secondary">Selling Price</div>
+                          </div>
+                          <div class="col-md-4">
+                            <span class="float-right text-secondary"
+                              ><del><strong> ₹ 841.00</strong></del></span
+                            >
+                          </div>
+                        </div>
+                        <hr
+                          class="ml-4 mr-4"
+                          style="
+                            border: none;
+                            border-top: 1px dashed #82beea;
+                            color: #fff;
+                            background-color: #fff;
+                          "
+                        />
+                        <div class="row mt-3">
+                          <div class="col-md-8">
+                            <div class="text-secondary">Special Price</div>
+                          </div>
+                          <div class="col-md-4">
+                            <span class="float-right text-secondary"
+                              ><del><strong>₹ 753.00</strong></del></span
+                            >
+                          </div>
+                        </div>
+                        <hr
+                          class="ml-4 mr-4"
+                          style="
+                            border: none;
+                            border-top: 1px solid #82beea;
+                            color: #fff;
+                            background-color: #fff;
+                          "
+                        />
+                        <div class="text-success ml-4">
+                          Overall you save ₹1796 (70%) on this product
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+              </div>
+
+              <div class="mt-3">
+                <span class="text-dark">
+                  <strong>Available offers</strong>
+                </span>
+                <div class="mt-3">
+                  <i class="fa fa-tag text-success"></i>
+                  <span class="" style="color: #212121; font-weight: 501"
+                    >Special Price</span
+                  >
+                  <span>Get extra 10% off (price inclusive of discount)</span>
+                  <span class="text-primary tc"
+                    ><a href="#"><strong>&nbsp; T&C</strong></a></span
+                  >
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="mt-3">
+                  <i class="fa fa-tag text-success"></i>
+                  <span class="" style="color: #212121; font-weight: 501"
+                    >Bank Offer</span
+                  >
+                  <span>5% Cashback on Flipkart Axis Bank Card</span>
+                  <span class="text-primary tc"
+                    ><a href="#"><strong>&nbsp;T&C</strong></a></span
+                  >
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="mt-3">
+                  <i class="fa fa-tag text-success"></i>
+                  <span class="" style="color: #212121; font-weight: 501"
+                    >Bank Offer</span
+                  >
+                  <span
+                    >Flat ₹150 Off* On 1st Transaction through Flipkart Pay
+                    Later</span
+                  >
+                  <span class="text-primary tc"
+                    ><a href="#"><strong>&nbsp;T&C</strong></a></span
+                  >
+                </div>
+              </div>
+
+              <div class="mt-4 p-details">
+                <div class="row m-0">
+                  <div class="col-md-11 p-0 p1">Product Details</div>
+                  <div class="col-md-1 p-0 p2" onclick="myFunction()">
+                    <img src="../images/pd-plus.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pd-desc" id="myDIV" style="display: none">
+                <div class="row">
+                  <div style="padding: 0 10px; width: 100%">
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Color</div>
+                      <div class="col-md-9 pd-desc-property">Grey</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Outer material</div>
+                      <div class="col-md-9 pd-desc-property">Mesh</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Ideal for</div>
+                      <div class="col-md-9 pd-desc-property">Men</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Occasion</div>
+                      <div class="col-md-9 pd-desc-property">Sport</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Sole material</div>
+                      <div class="col-md-9 pd-desc-property">PVC</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Closure</div>
+                      <div class="col-md-9 pd-desc-property">Lace-Ups</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Sales package</div>
+                      <div class="col-md-9 pd-desc-property">
+                        1 pair of shoes
+                      </div>
+                    </div>
+
+                    <div class="row mb-4">
+                      <div class="col-md-12">
+                        Birde Presents to You Elegant and Quality Footwear for
+                        men Made Of Best Quality Material Which Is Durable and
+                        Comfortable to Wear Birde Offers You a Variety of
+                        Designs and Styles with Unique Straps and Soles. These
+                        stylish shoes are the perfect inspiration for a
+                        fashionable look. The comfortable sole makes sure that
+                        your feet stay comfortable throughout the day and you
+                        enjoy optimal Grip. Designed to offer comfort at its
+                        best, without compromising on style. Birde is committed
+                        to deliver the finest shoes ever made. Converting
+                        designs and ideas into masterpiece is the work of Birde.
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">Generic Name</div>
+                      <div class="col-md-9 pd-desc-property">Shoe</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-3 pd-desc-title">
+                        Country of Origin
+                      </div>
+                      <div class="col-md-9 pd-desc-property">India</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 p-details">
+                <div class="row m-0">
+                  <div class="col-md-4 p-0 p1">Ratings & Reviews</div>
+                  <div
+                    class="col-md-6 p-0"
+                    style="padding: 32px 17px 32px 22px !important"
+                  >
+                    <span
+                      ><button
+                        class="btn btn-sm rounded-pill bg-success text-white"
+                        style="font-size: 16px"
+                      >
+                        3.9 <i class="fa fa-star"></i></button
+                    ></span>
+                    <span class="text-secondary px-2"
+                      >5,595 Ratings & 838 Reviews</span
+                    >
+                  </div>
+                  <div
+                    class="col-md-2 p-0"
+                    style="padding: 32px 19px 32px 0px !important"
+                  >
+                    <span
+                      ><button
+                        class="btn btn-sm rounded bg-primary text-white"
+                        style="font-size: 14px"
+                      >
+                        Rate product
+                      </button></span
+                    >
+                  </div>
+                </div>
+                <div class="mx-2">
+                  <div class="row">
+                    <div class="col">
+                      <div style="margin: -4px 0 23px 4px; font-size: 16px">
+                        <strong>What our customers felt:</strong>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-1 p-0 mt-2">
+                          <i
+                            class="fa fa-smile-o text-success"
+                            style="font-size: 1.5em"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                        <div class="col-md-10">
+                          <ul id="buttons">
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Look
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Comfort
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Light weight
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                True to specs
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-md-1 mt-2 p-0">
+                          <i
+                            class="fa fa-meh-o text-warning"
+                            style="font-size: 1.5em"
+                            aria-hidden="true"
+                          ></i>
+                        </div>
+                        <div class="col-md-10">
+                          <ul id="buttons">
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Light
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Light
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Light
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="btn btn-light btn-sm shadow-sm"
+                              >
+                                Light
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div style="margin: -4px 0 23px 4px; font-size: 16px">
+                        <strong>Images uploaded by customers:</strong>
+                      </div>
+                      <div class="row">
+                        <div class="col d-flex">
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_239de2a87a1d4f299b2ef57f4b5716a8.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_551f88191d264fe29795b98c6366ca98.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_d717ec95517346acaa37e75901798347.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_19d34b6f97644c6282afe506fa23252a.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu RU6t0j"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_5635e60592a34deab75b3f337a1fcaa9.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          >
+                            <span class="_380ehC">+ 21</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rating_container mt-5">
+                    <div class="">
+                      <p>
+                        <span
+                          ><button
+                            class="btn btn-xs rounded-pill mr-3 bg-success text-white"
+                            style="font-size: 12px"
+                          >
+                            5<i class="fa fa-star"></i></button></span
+                        >Very Good Products
+                      </p>
+                      <div class="row m-0">
+                        <div class="col p-0 d-flex">
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_239de2a87a1d4f299b2ef57f4b5716a8.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_551f88191d264fe29795b98c6366ca98.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_d717ec95517346acaa37e75901798347.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                          <div
+                            class="_21YjFX _1ylYJu"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/blobio/140/140/imr-202205/blobio-imr-202205_19d34b6f97644c6282afe506fa23252a.jpg?q=90'),
+                                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzlEOUQ5RCIgZmlsbC1ydWxlPSJub256ZXJvIj48cGF0aCBkPSJNMjAgMEgyQzEgMCAwIDEgMCAydjE0YzAgMS4xLjkgMiAyIDJoMThjMSAwIDItMSAyLTJWMmMwLTEtMS0yLTItMnptMCAxNS45MmMtLjAyLjAzLS4wNi4wNi0uMDguMDhIMlYyLjA4TDIuMDggMmgxNy44M2MuMDMuMDIuMDYuMDYuMDguMDh2MTMuODRIMjB6Ii8+PHBhdGggZD0iTTEwIDEyLjUxTDcuNSA5LjUgNCAxNGgxNGwtNC41LTZ6Ii8+PC9nPjwvc3ZnPg==');
+                              width: 70px;
+                              height: 70px;
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="row mt-1 m-0">
+                        <div class="col text-secondary p-0">
+                          <span class="mr-2 small" style="font-weight: 501"
+                            >MAJOM ALI</span
+                          >
+                          <span class="small"> 1month ago</span>
+                        </div>
+                        <div class="col text-secondary text-right">
+                          <span class="mr-3">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            74
+                          </span>
+                          <span class="mr-3">
+                            <i
+                              class="fa fa-thumbs-o-down"
+                              aria-hidden="true"
+                            ></i>
+                            12
+                          </span>
+                          <span>
+                            <i
+                              class="fa fa-ellipsis-v"
+                              aria-hidden="true"
+                              style="font-size: 16px"
+                            ></i>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="row text-secondary m-0">
+                        <div class="col p-0">
+                          <span>
+                            <i
+                              class="fa fa-check-circle"
+                              style="font-size: 16px; margin-left: 0px"
+                            ></i
+                          ></span>
+                          <span class="small">Certified Buyer, Darrang</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row w-100 bg-white text-center border shadow mb-3 banner-detail"
+    >
+      <div class="col border">
+        <img class="img-fluid" src="../images/banner1.png" alt="" />
+      </div>
+    </div>
+
+    <div class="m3_interest">
+      <div
+        class="row pl-3 pt-4 pb-2 m2_row border-0"
+        style="margin-right: 1px; margin-left: 1px"
+      >
+        <div class="col d-flex justify-content-start">
+          <h4><strong>You might be interested in</strong></h4>
+        </div>
+      </div>
+
+      <div id="interest" class="carousel slide mt-4" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col">
+                <div class="">
+                  <a
+                    href="#"
+                    class="a_interest p-2 ml-5 mt-3 mb-3 d-block shadow"
+                  >
+                    <div class="row">
+                      <div class="col">
+                        <div class="ml-5">
+                          <img
+                            class="ml-5"
+                            style="max-width: 50%"
+                            src="../images/glasses.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col pr-5">
+                        <div class="pt-4">
+                          <div class="text-body">
+                            <h4 style="margin-bottom: 3px">Sunglasses</h4>
+                          </div>
+                          <div class="text-secondary mb-4">Min 70% Off</div>
+                          <button href="#" class="btn btn-primary">
+                            Shop Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <a
+                    href="#"
+                    class="a_interest p-2 ml-5 mt-3 mb-3 d-block shadow"
+                  >
+                    <div class="row">
+                      <div class="col">
+                        <div class="ml-5">
+                          <img
+                            class="ml-5"
+                            style="max-width: 50%"
+                            src="../images/glasses.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col pr-5">
+                        <div class="pt-4">
+                          <div class="text-body">
+                            <h4 style="margin-bottom: 3px">Sunglasses</h4>
+                          </div>
+                          <div class="text-secondary mb-4">Min 70% Off</div>
+                          <button href="#" class="btn btn-primary">
+                            Shop Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <a
+                    href="#"
+                    class="a_interest p-2 ml-5 mt-3 mb-3 d-block shadow"
+                  >
+                    <div class="row">
+                      <div class="col">
+                        <div class="ml-5">
+                          <img
+                            class="ml-5"
+                            style="max-width: 50%"
+                            src="../images/glasses.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col pr-5">
+                        <div class="pt-4">
+                          <div class="text-body">
+                            <h4 style="margin-bottom: 3px">Sunglasses</h4>
+                          </div>
+                          <div class="text-secondary mb-4">Min 70% Off</div>
+                          <button href="#" class="btn btn-primary">
+                            Shop Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#interest" data-slide="prev">
+            <span
+              class="glyphicon glyphicon-chevron-left"
+              style="margin: -29px 17px 31px 15px"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#interest" data-slide="next">
+            <span
+              class="glyphicon glyphicon-chevron-right rightarrow"
+              style="margin: -25px 6px 31px 15px"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="m4">
+      <div
+        class="row pl-3 pt-4 pb-2 m2_row border-0"
+        style="margin-right: 1px; margin-left: 1px"
+      >
+        <div class="col d-flex justify-content-start">
+          <h4><strong> Men's Clothes</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-primary btn-sm btn_view">View All</button>
+        </div>
+      </div>
+
+      <div id="menCarousel" class="carousel slide mt-4" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row" style="height: 362px" class="text-center">
+              <div class="col-3">
+                <div class="mx-5 px-5 f-element">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row" style="height: 362px" class="">
+              <div class="col-3">
+                <div class="mx-5 px-5">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a
+            class="left carousel-control"
+            href="#menCarousel"
+            data-slide="prev"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-left"
+              style="margin: -88px 17px 31px 15px"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#menCarousel"
+            data-slide="next"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-right rightarrow"
+              style="margin: -95px 6px 31px 15px"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="m4">
+      <div
+        class="row pl-3 pt-4 pb-2 m2_row border-0"
+        style="margin-right: 1px; margin-left: 1px"
+      >
+        <div class="col d-flex justify-content-start">
+          <h4><strong> Recently Viewed</strong></h4>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-primary btn-sm btn_view">View All</button>
+        </div>
+      </div>
+
+      <div id="menCarousel" class="carousel slide mt-4" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row" style="height: 362px" class="text-center">
+              <div class="col-3">
+                <div class="mx-5 px-5 f-element">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row" style="height: 362px" class="">
+              <div class="col-3">
+                <div class="mx-5 px-5">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="">
+                  <a href="#" class="m2_a">
+                    <div class="top">
+                      <i class="fa fa-heart"></i>
+                      <img
+                        width="217"
+                        height="170"
+                        src="../images/products/product-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <div class="bottom bg-white">
+                        <div class="">
+                          <div class="prod-color text-secondary pt-2">
+                            <strong>BRIDE</strong>
+                          </div>
+                          <div class="rate pt-2">
+                            <span class="text-dark">Boys Half Red ....</span>
+                            <img
+                              class="img-fluid"
+                              width="70"
+                              src="../images/fd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="price pt-2">
+                            <span class="text-body"
+                              ><strong>Rs 1,700</strong></span
+                            >
+                            <span class="text-secondary"
+                              >&nbsp;<del>Rs 1,800</del></span
+                            >
+                            <span class="text-success"
+                              >&nbsp;&nbsp;55% off</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a
+            class="left carousel-control"
+            href="#menCarousel"
+            data-slide="prev"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-left"
+              style="margin: -88px 17px 31px 15px"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#menCarousel"
+            data-slide="next"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-right rightarrow"
+              style="margin: -95px 6px 31px 15px"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="m6">
+      <div class="footer_top">
+        <div class="row pt-4">
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col ml-5">
+                <h5 class="text-secondary">ABOUT</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Flipkart Stories</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Press</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="text-secondary">ABOUT</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Flipkart Stories</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Press</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="text-secondary">ABOUT</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Flipkart Stories</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Press</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="text-secondary">ABOUT</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Flipkart Stories</a>
+                  </li>
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#">Press</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col">
+                <h5 class="text-secondary">Mail Us:</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#"
+                      >Flipkart Internet Private Limited,
+                      <br />
+                      Buildings Alyssa, Begonia &
+                      <br />
+                      Clove Embassy Tech Village,
+                      <br />
+                      Outer Ring Road, Devarabeesanahalli Village,
+                      <br />
+                      Bengaluru, 560103,
+                      <br />
+                      Karnataka, India
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="text-secondary">Registered Office Address::</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item" style="margin: 0px 0px -13px 0px">
+                    <a class="nav-link" href="#"
+                      >Flipkart Internet Private Limited,
+                      <br />
+                      Buildings Alyssa, Begonia &
+                      <br />
+                      Clove Embassy Tech Village,
+                      <br />
+                      Outer Ring Road, Devarabeesanahalli Village,
+                      <br />
+                      Bengaluru, 560103,
+                      <br />
+                      Karnataka, India
+                      <br />
+                      CIN : U51109KA2012PTC066107
+                      <br />
+                      Telephone:
+                      <b style="color: blue; font-weight: 700">1800 202 9898</b>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="row">
+          <div class="col-md-7 mt-4 ml-5">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../images/icons/star.svg" /><span
+                    >Become a Seller</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../images/icons/ad.svg" /><span>Advertise</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../images/icons/gift.svg" /><span
+                    >Gift Cards</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="../images/icons/help.svg" /><span
+                    >Help Center</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-4">
+            <a class="nav-link" href="#"
+              ><img src="../images/icons/pay.svg" style="margin-top: -13px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.9.1.min.js"
+      integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="../js/jquery.simpleGallery.js"></script>
+    <script type="text/javascript" src="../js/jquery.simpleLens.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#demo-1 .simpleLens-thumbnails-container img").simpleGallery({
+          loading_image: "../images/demo/images/loading.gif",
+        });
+
+        $("#demo-1 .simpleLens-big-image").simpleLens({
+          loading_image: "../images/demo/images/loading.gif",
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("#demo-2 .simpleLens-thumbnails-container img").simpleGallery({
+          loading_image: "../images/demo/images/loading.gif",
+          show_event: "click",
+        });
+
+        $("#demo-2 .simpleLens-big-image").simpleLens({
+          loading_image: "../images/demo/images/loading.gif",
+          open_lens_event: "click",
+        });
+      });
+
+      $(document).on(
+        "mouseout",
+        ".detail .simpleLens-thumbnails-container a",
+        function () {
+          $(this)
+            .closest(".simpleLens-thumbnails-container")
+            .find("a")
+            .css("border", "2px solid #fff");
+          $(this).css("border", "2px solid #2874f0");
+        }
+      );
+
+      $(document).on("click", ".chev_up, .chev_down", function (e) {
+        e.preventDefault();
+      });
+
+      $(document).on("click", ".chev_down", function () {
+        var ovh = $(".overflowcover").height();
+        var h = $(".overflowcover > div").height();
+        var to_move = h - ovh;
+        $(".overflowcover > div").css(
+          "transform",
+          "translate(0px,-" + to_move + "px)"
+        );
+        $(this).hide();
+        $(".chev_up").show();
+      });
+
+      $(document).on("click", ".chev_up", function () {
+        $(".overflowcover > div").css("transform", "translate(0px,0px)");
+        $(this).hide();
+        $(".chev_down").show();
+      });
+
+      $(window).on("scroll", function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 121) {
+          $("article.detail").addClass("affix");
+        } else {
+          $("article.detail").removeClass("affix");
+        }
+      });
+
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
